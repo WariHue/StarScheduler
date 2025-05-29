@@ -6,8 +6,18 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import {StarBlock} from "@/components/StarBlock";
+import {Schedule} from "@/types";
 
 export default function Home() {
+    const a: Schedule = {
+        title : "a",
+        poster : 'john doe',
+        postDate : new Date(),
+        endDate : new Date(),
+        description : 'a',
+        priorityLevel : "Normal"
+    }
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
@@ -21,7 +31,7 @@ export default function Home() {
           Beautiful, fast and modern React UI library.
         </div>
       </div>
-
+        <StarBlock schedule={a}/>
       <div className="flex gap-3">
         <Link
           isExternal
