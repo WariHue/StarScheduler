@@ -6,14 +6,14 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 
 export type Schedule = {
   title: string;
-  poster: string;
   postDate: Date;
   endDate: Date;
-  description: String;
-  priorityLevel: PriorityLevel;
-};
+  poster: string;
+  description: string;
+  priorityLevel : PriorityLevel
+}
 
 export type PriorityLevel =
-  | 'Red'
-  | 'Yellow'
-  | 'Normal';
+  | 'NORMAL'
+  | 'YELLOW'
+  | 'RED';
