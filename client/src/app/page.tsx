@@ -1,4 +1,5 @@
 import {StarBlock} from "@/src/components/StarBlock";
+import {Calendar} from "@/src/components/Calendar";
 import {Schedule} from "@/src/types";
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
   }
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <StarBlock schedule={a}/>
+      {/*<StarBlock schedule={a}/>*/}
+      <Calendar schedule={[a]}/>
     </section>
   );
 }

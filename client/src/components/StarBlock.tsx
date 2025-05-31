@@ -6,7 +6,7 @@ import {Divider} from "@heroui/react";
 
 export const StarBlock: React.FC<{ schedule: Schedule}> = ({ schedule }) => {
   return (
-    <Card className={"w-36 h-32"}>
+    <Card className={"w-36 h-32 m-1"}>
       <CardHeader>
         <div className={"max-w-[400px]"}>
           <p className={"font-bold"}>{schedule.endDate.getDate()}</p>
